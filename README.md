@@ -1,6 +1,10 @@
 ## Front Websocket conexão com JAVA
 Exemplo de conexão do front de um websocket em java.
 
+### Repositório do back-end
+
+- [@websocket-java](https://github.com/reisrb/websocket-java)
+
 ## Documentação do JS
 
 #### Estabelecer conexão com websocket
