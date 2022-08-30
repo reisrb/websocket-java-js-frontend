@@ -9,6 +9,8 @@ Exemplo de conexão do front de um websocket em java.
 
 #### Estabelecer conexão com websocket
 
+Inicie com o live server ou servidor inicializado com npm ou yarn
+
 ```javascript
 var socket = new SockJS('http://localhost:8080/websocket');
 
