@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WebSockets com HTML5</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.js"
+    integrity="sha512-aHuAnb+FZ/yM5zYvdiA8q0sxLdsBQ3PRwO8D/08qsenCLQ2gWsosB43Cn1X8esAz0IpaC7Ns5cAPyKIdJQ0hNw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"
+    integrity="sha512-tL4PIUsPy+Rks1go4kQG8M8/ItpRMvKnbBjQm4d2DQnFwgcBYRRN00QdyQnWSCwNMsoY/MfJY8nHp2CzlNdtZA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <style>
+    progress {
+      border-radius: 7px;
+      width: 100%;
+      height: 70px;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    #barra-progresso::-webkit-progress-value {
+      background-color: #78B82A;
+    }
+
+    #barra-calculo::-webkit-progress-value {
+      background-color: #EC6723;
+    }
+
+    progress::-moz-progress-bar {
+      border-radius: 7px;
+      /* style rules */
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="page-wrapper">
+    <h1>Client</h1>
+
+    <div id="status">Conectando a aplicação...</div>
+    
+    <ul id="mensagens"></ul>
+
+  </div>
+
+  <script src="receber.js"></script>
+</body>
+
+</html>
